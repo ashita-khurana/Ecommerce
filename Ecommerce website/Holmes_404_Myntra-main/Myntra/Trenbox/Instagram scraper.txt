@@ -1,0 +1,4 @@
+# Installing the scraper
+$ pip install instagram-scraper
+# Using the scraper to scrap photos of the username specified, maximum limits the number of images to be scraped
+$ instagram-scraper <username> -u <your username> -p <your password>  --maximum <#>

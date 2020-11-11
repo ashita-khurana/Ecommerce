@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Holmes 404</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <h1>What do you want to search?</h1>
+    <h3 style="color:Tomato;">Speak Now : Record -> Stop -> Upload -> Submit  Query </h3>
+
+    <div id="controls">
+     <button id="recordButton">Record</button>
+     <button id="pauseButton" disabled>Pause</button>
+     <button id="stopButton" disabled>Stop</button>
+     <form action="/voicesearch1" method="POST">
+		<div style= "width:30%; margin: 25px auto;">
+		<label>Click on Submit Query </label>
+		<select name="me">
+  			<option value="VoiceSearch">Voice Search</option>
+  			
+            </select>
+            <input type="submit">
+    	</div>
+    </form>
+    <div id="formats"></div>
+    <p><strong>Recordings:</strong></p>
+    <ol id="recordingsList"></ol>
+	</div>
+    <!-- inserting these scripts at the end to be able to use all the elements in the DOM -->
+    <script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+    <script src="/static/js/app.js"></script>
+  </body>
+</html>
